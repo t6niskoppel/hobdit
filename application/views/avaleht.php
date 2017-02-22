@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class=\"glyphicon glyphicon-arrow-down\"></button>
                     </div>
                 </div>
-                <a href=\" http://localhost/hobdit/index.php/welcome/post_view\">
+                 <a href=\""; echo base_url(); echo "index.php/welcome/post_view\">
                 <div class=\"col-sm-10\">
                     <div class=\"well\">
                         <h2>postitus $x</h2>
