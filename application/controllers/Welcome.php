@@ -24,39 +24,46 @@ class Welcome extends CI_Controller {
         $this->load->view('avaleht');
 		$this->load->view('footer');
 	}
-    
+
 	public function category()
 	{
         $this->load->view('header');
         $this->load->view('category_view');
 		$this->load->view('footer');
 	}
-    
+
     public function post_view()
 	{
         $this->load->view('header');
         $this->load->view('post_view');
 		$this->load->view('footer');
 	}
-    
+
     public function new_post()
 	{
         $this->load->view('header');
         $this->load->view('new_post_view');
 		$this->load->view('footer');
 	}
-	
+
 	public function kkk()
 	{
         $this->load->view('header');
         $this->load->view('kkk');
 		$this->load->view('footer');
 	}
-	
+
 	public function about()
 	{
         $this->load->view('header');
         $this->load->view('about');
+		$this->load->view('footer');
+	}
+
+	public function search()
+	{
+		$this->load->view('header');
+		$this->load->view('search');
 		$this->load->view('footer');
 	}
 }

@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="<?php echo base_url(); ?>media/js/bootstrap.js"></script>
 </head>
 <body>
- 
+
 <nav class="navbar navbar-inverse">
     <!--TODO: check javascripti kohta, kui pole lubatud siis burger ei tööta-->
   <div class="container-fluid">
@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#burgerMenu">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
     </div>
     <div class="collapse navbar-collapse" id="burgerMenu">
@@ -29,7 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li><a href="<?php echo base_url(); ?>welcome/about">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Täpsem otsing</a></li>
+        <li><a href="<?php echo base_url(); ?>welcome/search">Täpsem otsing</a></li>
+        <!-- <li><a href="#">Täpsem otsing</a></li> -->
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
@@ -38,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <button class="btn btn-default" type="button">
               <span class="glyphicon glyphicon-search"></span>
             </button>
-          </span>        
+          </span>
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
@@ -51,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
   </div>
       </ul>
-        
+
     </div>
   </div>
 </nav>
