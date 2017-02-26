@@ -45,4 +45,18 @@ class Welcome extends CI_Controller {
         $this->load->view('new_post_view');
 		$this->load->view('footer');
 	}
+	
+	public function kkk()
+	{
+        $this->load->view('header');
+        $this->load->view('kkk');
+		$this->load->view('footer');
+	}
+	
+	public function about()
+	{
+        $this->load->view('header');
+        $this->load->view('about');
+		$this->load->view('footer');
+	}
 }
