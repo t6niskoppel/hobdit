@@ -43,6 +43,8 @@
 														<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
 													</div>
 												</div>
+												<br>
+												<button type="Otsi" class="btn btn-primary btn-md">Medium</button>
 											</div>
 											<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 											<!-- Include Date Range Picker -->
@@ -61,4 +63,4 @@
     })
 </script>
 										</body>
-									</html>
+</html>

@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="<?php echo base_url(); ?>media/js/bootstrap.js"></script>
 </head>
 <body>
- 
+
 <nav class="navbar navbar-inverse">
     <!--check javascripti kohta, kui pole lubatud siis burger ei tööta-->
   <div class="container-fluid">
@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -29,8 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li><a href="<?php echo base_url(); ?>index.php/welcome/about">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          
-        <li><a href="#">Täpsem otsing</a></li>
+        <li><a href="<?php echo base_url(); ?>index.php/welcome/search">Täpsem otsing</a></li>
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
@@ -39,11 +38,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <button class="btn btn-default" type="button">
               <span class="glyphicon glyphicon-search"></span>
             </button>
-          </span>        
+          </span>
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-          
+
          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#logIn">Log In</button>
       </ul>
     </div>
@@ -66,18 +65,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="pwd">Password:</label>
-    <div class="col-sm-10"> 
+    <div class="col-sm-10">
       <input type="password" class="form-control" id="pwd" placeholder="Enter password">
     </div>
   </div>
-  <div class="form-group"> 
+  <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <div class="checkbox">
         <label><input type="checkbox"> Remember me</label>
       </div>
     </div>
   </div>
-  <div class="form-group"> 
+  <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-default">Submit</button>
     </div>
