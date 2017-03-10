@@ -1,40 +1,37 @@
+<script>
+	document.title = "Otsing";
+</script>
 <div class="container text-left">
    <div class="col-sm-12">
       <h2>Täpsem otsing</h2>
       <div class="form-group">
-         <label>Postituse pealkiri:</label>
-         <br>
+         <label for="pealkiri">Postituse pealkiri:</label>
          <input type="text" class="form-control" id="pealkiri">
       </div>
       <div class="form-group">
-         <label>Sisaldab teksti:</label>
-         <br>
+         <label for="sisu">Sisaldab teksti:</label>
          <input type="text" class="form-control" id="sisu">
       </div>
       <div class="form-group">
-         <label>Kategooria:</label>
-         <br>
-         <select class="selectpicker">
+         <label for="kategooriad">Kategooria:</label>
+		 <br>
+         <select class="selectpicker" id="kategooriad">
             <option>Esimene kategooria</option>
             <option>Teine kategooria</option>
             <option>Kolmas kategooria</option>
          </select>
       </div>
       <div class="form-group">
-         <label>Alguskuupäev:</label>
-         <br>
          <div class="form-group ">
-            <label class="control-label"></label>
-            <input class="form-control" id="startDate" name="startDate" placeholder="MM/DD/YYYY" type="text"/>
+            <label for="startDate">Alguskuupäev:</label>
+			<br>
+            <input id="startDate" name="date" placeholder="MM/DD/YYYY" type="text"/>
          </div>
       </div>
       <div class="form-group">
-         <label>Lõppkuupäev:</label>
-         <br>
-         <div class="form-group ">
-            <label class="control-label"></label>
-            <input class="form-control" id="endDate" name="endDate" placeholder="MM/DD/YYYY" type="text"/>
-         </div>
+            <label for="endDate">Lõppkuupäev:</label>
+			<br>
+            <input id="endDate" name="date" placeholder="MM/DD/YYYY" type="text"/>
       </div>
       <br>
       <button type="submit" value="Submit" class="btn btn-primary btn-md">Otsi</button>

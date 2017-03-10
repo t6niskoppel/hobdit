@@ -4,12 +4,12 @@
 <div class="container text-center">
    <div class="col-sm-10">
       <div class="row text-left">
-         <div class="col-sm-12">
+         <div class="col-sm-13">
             <div class="well">
                <div class="media">
-                  <div class="media-left media-middle">
+                  <div class="media-left col-sm-2">
                      <div class="well">
-                        <p>postitaja andmed</p>
+                        <p>Postitaja andmed</p>
                         <button type="button" class="btn btn-info">
                         <span class="glyphicon glyphicon-arrow-up"></span></button>
                         <button type="button" class="btn btn-info">
@@ -28,7 +28,7 @@
       <div class="row">
          <div class="col-sm-2">
             <div class="well">
-               <p>kommenteerija andmed</p>
+               <p>Kommenteerija andmed</p>
                <button type="button" class="btn btn-info">
                <span class="glyphicon glyphicon-arrow-up"></span></button>
                <button type="button" class="btn btn-info">
@@ -47,7 +47,7 @@
       <div class="row">
          <div class="col-sm-2">
             <div class="well">
-               <p>kommenteerija andmed</p>
+               <p>Kommenteerija andmed</p>
                <button type="button" class="btn btn-info">
                <span class="glyphicon glyphicon-arrow-up"></span></button>
                <button type="button" class="btn btn-info">
@@ -66,7 +66,7 @@
       <div class="row">
          <div class="col-sm-2">
             <div class="well">
-               <p>kommenteerija andmed</p>
+               <p>Kommenteerija andmed</p>
                <button type="button" class="btn btn-info">
                <span class="glyphicon glyphicon-arrow-up"></span></button>
                <button type="button" class="btn btn-info">
@@ -82,9 +82,9 @@
          </div>
       </div>
       <div class="form-group text-left">
-         <label for="comment">Comment:</label>
+         <label for="comment">Kommenteeri:</label>
          <textarea class="form-control" rows="5" id="comment"></textarea>
-         <button type="Submit">submit</button>
+         <button type="Submit">Postita</button>
       </div>
    </div>
    <div class="col-sm-2 well">

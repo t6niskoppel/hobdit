@@ -1,3 +1,6 @@
+<script>
+document.title = "Korduma Kippuvad Küsimused";
+</script>
 <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
    ?> 
@@ -28,7 +31,7 @@
          <button type="Submit">Saada</button>
       </div>
    </div>
-   <div class="col-sm-2 well">
+   <div class="col-sm-2 well text-center">
       <p>Kategooriad</p>
       <div class="list-group">
          <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 1</a>

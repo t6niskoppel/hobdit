@@ -33,6 +33,7 @@
          ?>
    </div>
    <div class="col-sm-2 well">
+      <p>Kategooriad</p>
       <div class="list-group">
          <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 1</a>
          <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 2</a>

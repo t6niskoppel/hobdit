@@ -1,7 +1,7 @@
 <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
    ?><!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
    <head>
       <title>Avaleht</title>
       <meta charset="utf-8">
@@ -23,16 +23,17 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav">
-                  <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                  <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk">Help</a></li>
-                  <li><a href="<?php echo base_url(); ?>index.php/welcome/about">About</a></li>
+                  <li><a href="<?php echo base_url(); ?>">Avaleht</a></li>
+                  <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk">KKK</a></li>
+                  <li><a href="<?php echo base_url(); ?>index.php/welcome/about">Info</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="<?php echo base_url(); ?>index.php/welcome/search">Täpsem otsing</a></li>
                </ul>
                <form class="navbar-form navbar-right" role="search">
                   <div class="form-group input-group">
-                     <input type="text" class="form-control" placeholder="Search..">
+                     <label class="sr-only" for="search">Search</label>
+                     <input type="text" class="form-control" placeholder="Search..." id="search">
                      <span class="input-group-btn">
                      <button class="btn btn-default" type="button">
                      <span class="glyphicon glyphicon-search"></span>
@@ -69,7 +70,8 @@
                      <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                            <div class="checkbox">
-                              <label><input type="checkbox"> Remember me</label>
+							  <label for="rememberMe">
+							  <input type="checkbox" id="rememberMe">Remember me</label>
                            </div>
                         </div>
                      </div>
@@ -86,4 +88,3 @@
             </div>
          </div>
       </div>
-   </body>

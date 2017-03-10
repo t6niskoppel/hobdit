@@ -4,7 +4,7 @@
 <div class="container text-left">
    <div class="col-sm-10">
       <div class="form-group">
-         <label for="usr">pealkiri:</label>
+         <label for="usr">Pealkiri:</label>
          <input type="text" class="form-control" id="usr">
       </div>
       <div class="form-group">
