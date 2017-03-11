@@ -12,28 +12,18 @@
    </head>
    <body>
       <nav class="navbar navbar-inverse">
-         <!--check javascripti kohta, kui pole lubatud siis burger ei tööta-->
          <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav">
-                  <li><a href="<?php echo base_url(); ?>">Avaleht</a></li>
-                  <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk">KKK</a></li>
-                  <li><a href="<?php echo base_url(); ?>index.php/welcome/about">Info</a></li>
+                  <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                  <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk">Help</a></li>
+                  <li><a href="<?php echo base_url(); ?>index.php/welcome/about">About</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="<?php echo base_url(); ?>index.php/welcome/search">Täpsem otsing</a></li>
+                  <li><a href="<?php echo base_url(); ?>index.php/welcome/search">Refined search</a></li>
                </ul>
                <form class="navbar-form navbar-right" role="search">
                   <div class="form-group input-group">
-                     <label class="sr-only" for="search">Search</label>
-                     <input type="text" class="form-control" placeholder="Search..." id="search">
+                     <input type="text" class="form-control" placeholder="Search..">
                      <span class="input-group-btn">
                      <button class="btn btn-default" type="button">
                      <span class="glyphicon glyphicon-search"></span>
@@ -42,10 +32,11 @@
                   </div>
                </form>
                <ul class="nav navbar-nav navbar-right">
-                  <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#logIn">Log In</button></li>
+                   
+                   <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>
+                    <li><a href="#" onclick="login()";><span class="glyphicon glyphicon-log-in"></span> Login</a></li>'
                </ul>
             </div>
-         </div>
       </nav>
       <div class="modal fade" id="logIn" role="dialog">
          <div class="modal-dialog">

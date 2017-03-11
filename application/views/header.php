@@ -43,16 +43,8 @@
                   </div>
                </form>
                <ul class="nav navbar-nav navbar-right">
-                  <li>
-                     <div class="btn-group"></div>
-                  </li>
-                  <li><button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                     My account <span class="caret"></span></button>
-                  </li>
-               </ul>
-               <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">My Posts</a></li>
-                  <li><a href="#">Settings</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span>My account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
                </ul>
             </div>
          </div>

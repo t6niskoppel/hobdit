@@ -66,4 +66,5 @@ public function search()
         $this->load->view('search');
 		$this->load->view('footer');
 	}
+    
 }
