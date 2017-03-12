@@ -20,51 +20,68 @@ class Welcome extends CI_Controller {
 	 */
     public function index()
 	{
-        $this->load->view('header_loggedOut');
+				$data['title'] = 'Avaleht';
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('avaleht');
 		$this->load->view('footer');
 	}
-    
+
 	public function category()
 	{
-        $this->load->view('header');
+				$data['title'] = 'Kategooriad';
+        $this->load->view('header', $data);
         $this->load->view('category_view');
 		$this->load->view('footer');
 	}
-    
+
     public function post_view()
 	{
-        $this->load->view('header');
+				$data['title'] = 'Postitus';
+        $this->load->view('header', $data);
         $this->load->view('post_view');
 		$this->load->view('footer');
 	}
-    
+
     public function new_post()
 	{
-        $this->load->view('header');
+				$data['title'] = 'Uus postitus';
+        $this->load->view('header', $data);
         $this->load->view('new_post_view');
 		$this->load->view('footer');
 	}
 
 	public function kkk()
 	{
-        $this->load->view('header');
+				$data['title'] = 'KKK';
+        $this->load->view('header', $data);
         $this->load->view('kkk');
 		$this->load->view('footer');
 	}
 
 public function about()
 	{
-        $this->load->view('header');
+				$data['title'] = 'Info';
+        $this->load->view('header', $data);
         $this->load->view('about');
 		$this->load->view('footer');
 	}
 
 public function search()
 	{
-        $this->load->view('header');
+				$data['title'] = 'Täpsem otsing';
+        $this->load->view('header', $data);
         $this->load->view('search');
 		$this->load->view('footer');
 	}
-    
+
+public function register()
+	{
+				$data['title'] = 'Registreerimine';
+				$this->load->view('header', $data);
+				$this->load->view('registreerimine');
+		$this->load->view('footer');
+	}
+
+
+
 }

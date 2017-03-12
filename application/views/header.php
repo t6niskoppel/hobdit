@@ -3,7 +3,7 @@
    ?><!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Hobdit</title>
+      <title><?php echo isset($title) ? $title : 'Default Title' ; ?></title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>media/css/bootstrap.css">

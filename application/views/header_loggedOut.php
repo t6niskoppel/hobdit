@@ -3,13 +3,13 @@
    ?><!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Avaleht</title>
+      <title><?php echo isset($title) ? $title : 'Default Title' ; ?></title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>media/css/bootstrap.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="<?php echo base_url(); ?>media/js/bootstrap.js"></script>
-	        
+
 	  <!-- Date Picker -->
       <script async type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <!-- Include Date Range Picker -->
@@ -40,7 +40,7 @@
                   </div>
                </form>
                <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>
+                   <li><a href="<?php echo base_url(); ?>index.php/welcome/register"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                </ul>
             </div>
@@ -77,6 +77,11 @@
                         <div class="col-sm-offset-2 col-sm-10">
                            <button type="submit" class="btn btn-default">Submit</button>
                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="col-sm-offset-2 col-sm-10">Ei ole veel kasutaja,
+                           <a href="<?php echo base_url(); ?>index.php/welcome/register">registreeru kasutajaks</a>
+                         </label>
                      </div>
                   </form>
                </div>
