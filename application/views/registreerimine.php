@@ -5,9 +5,9 @@
 <div class="container text-left">
    <div class="col-sm-10">
       <h2>Kasutajaks registreerimine</h2>
-      <br><b>
-        <div id="errors" />
-      </b><br>
+      <br>
+        <div id="errors"></div>
+      <br>
       <div class="form-group">
          <label for="kasutajanimi">Kasutajanimi:</label>
          <input type="text" class="form-control" id="kasutajanimi" autofocus>
@@ -15,17 +15,15 @@
          <label for="email">Email:</label>
          <input type="text" class="form-control" id="email">
          <br>
-         <label for="pass1">Salasõna:</label>
-         <input type="password" class="form-control" id="pass1">
+         <label for="pass">Salasõna:</label>
+         <input type="password" class="form-control" id="pass">
          <br>
-         <label for="passs">Korrata salasõna:</label>
-         <input type="password" class="form-control" id="pass2">
+         <label for="passKorrata">Korrata salasõna:</label>
+         <input type="password" class="form-control" id="passKorrata">
          <br>
-         <input type="checkbox" id="kasutajatingimus" value="accept"> <b>Kinnitan, et olen lugenud ja nõustun kasutajatingimustega</b><br>
+         <input type="checkbox" id="kasutajatingimus" value="accept"> <label for="kasutajatingimus">Kinnitan, et olen lugenud ja nõustun kasutajatingimustega</label><br>
          <br>
          <button type="submit" value="Submit" class="btn btn-primary btn-md">Registreeru</button>
       </div>
    </div>
 </div>
-<?php
- ?>
