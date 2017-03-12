@@ -1,6 +1,3 @@
-<script>
-document.title = "Informatsioon";
-</script>
 <div class="container text-left">
    <div class="col-sm-12">
       <div class="form-group">

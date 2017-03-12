@@ -1,6 +1,3 @@
-<script>
-	document.title = "Otsing";
-</script>
 <div class="container text-left">
    <div class="col-sm-12">
       <h2>Täpsem otsing</h2>

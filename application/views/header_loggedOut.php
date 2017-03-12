@@ -3,7 +3,7 @@
    ?><!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Avaleht</title>
+      <title>Hobdit</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>media/css/bootstrap.css">
@@ -23,7 +23,8 @@
                </ul>
                <form class="navbar-form navbar-right" role="search">
                   <div class="form-group input-group">
-                     <input type="text" class="form-control" placeholder="Search..">
+                      <label class="sr-only" for="search">Search</label>
+                      <input type="text" class="form-control" placeholder="Search..." id="search">
                      <span class="input-group-btn">
                      <button class="btn btn-default" type="button">
                      <span class="glyphicon glyphicon-search"></span>
@@ -34,7 +35,7 @@
                <ul class="nav navbar-nav navbar-right">
                    
                    <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>
-                    <li><a href="#" onclick="login()";><span class="glyphicon glyphicon-log-in"></span> Login</a></li>'
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                </ul>
             </div>
       </nav>
