@@ -1,6 +1,3 @@
-<script>
-   document.title = "Kategooriad";
-</script>
 <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
    ?> 
