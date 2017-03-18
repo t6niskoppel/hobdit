@@ -40,12 +40,8 @@
         )
   		);
 
-      //$this->load->model('DBquery');
-      //print_r($this->DBquery->usernameAvailable('rerwf'));
-      //print_r("++".$this->username_available('asd3d3d')."++");
-
   		$this->form_validation->set_rules($FormRules);
-      //print_r($_POST);
+
   		if($this->form_validation->run())
   		{
         $_POST['pass1'] = md5($_POST['pass1']);
