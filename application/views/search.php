@@ -33,6 +33,4 @@
       <br>
       <button type="submit" value="Submit" class="btn btn-primary btn-md">Otsi</button>
    </div>
-   
-
 </div>

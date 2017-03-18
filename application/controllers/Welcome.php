@@ -29,7 +29,7 @@ class Welcome extends CI_Controller {
 	public function category()
 	{
 				$data['title'] = 'Kategooriad';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('category_view');
 		$this->load->view('footer');
 	}
@@ -37,7 +37,7 @@ class Welcome extends CI_Controller {
     public function post_view()
 	{
 				$data['title'] = 'Postitus';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('post_view');
 		$this->load->view('footer');
 	}
@@ -45,7 +45,7 @@ class Welcome extends CI_Controller {
     public function new_post()
 	{
 				$data['title'] = 'Uus postitus';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('new_post_view');
 		$this->load->view('footer');
 	}
@@ -53,7 +53,7 @@ class Welcome extends CI_Controller {
 	public function kkk()
 	{
 				$data['title'] = 'KKK';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('kkk');
 		$this->load->view('footer');
 	}
@@ -61,7 +61,7 @@ class Welcome extends CI_Controller {
 public function about()
 	{
 				$data['title'] = 'Info';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('about');
 		$this->load->view('footer');
 	}
@@ -69,7 +69,7 @@ public function about()
 public function search()
 	{
 				$data['title'] = 'Täpsem otsing';
-        $this->load->view('header', $data);
+        $this->load->view('header_loggedOut', $data);
         $this->load->view('search');
 		$this->load->view('footer');
 	}
@@ -77,11 +77,10 @@ public function search()
 public function register()
 	{
 				$data['title'] = 'Registreerimine';
-				$this->load->view('header', $data);
+				$this->load->view('header_loggedOut', $data);
 				$this->load->view('registreerimine');
 		$this->load->view('footer');
 	}
-
 
 
 }
