@@ -19,9 +19,7 @@
       <!--- Google maps---->
        <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kaart.css"/>
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kaart.js"></script>
-      <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNSxth2gmgcDQB6XwixoXtFYmkR6NrcTc&callback=initMap">
-</script>
+      
    </head>
    <body>
       <nav class="navbar navbar-inverse">
@@ -74,8 +72,8 @@
                      <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                            <div class="checkbox">
-							  <label for="rememberMe">
-							  <input type="checkbox" id="rememberMe">Remember me</label>
+							  <label for="rememberMe" data-toggle="tooltip" title="Kas soovid, et kasutaja jääks sisselogituks peale brauseri sulgemist?">
+							  <input type="checkbox" id="rememberMe" data-toggle="tooltip" title="Kas soovid, et kasutaja jääks sisselogituks peale brauseri sulgemist?" >Remember me</label>
                            </div>
                         </div>
                      </div>
