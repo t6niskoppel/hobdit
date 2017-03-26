@@ -19,6 +19,8 @@
       <!--- Google maps---->
        <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kaart.css"/>
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kaart.js"></script>
+	  <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/registreerimine.js"></script>
+
       
    </head>
    <body>
