@@ -14,9 +14,12 @@
       <script async type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <!-- Include Date Range Picker -->
       <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-      <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kalender.css"/>
+      <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kalender.css"/>     
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kalender.js"></script>
-
+      <!--- Google maps---->
+       <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kaart.css"/>
+      <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kaart.js"></script>
+      
    </head>
    <body>
       <nav class="navbar navbar-inverse">
@@ -69,8 +72,8 @@
                      <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                            <div class="checkbox">
-							  <label for="rememberMe">
-							  <input type="checkbox" id="rememberMe">Remember me</label>
+							  <label for="rememberMe" data-toggle="tooltip" title="Kas soovid, et kasutaja jääks sisselogituks peale brauseri sulgemist?">
+							  <input type="checkbox" id="rememberMe" data-toggle="tooltip" title="Kas soovid, et kasutaja jääks sisselogituks peale brauseri sulgemist?" >Remember me</label>
                            </div>
                         </div>
                      </div>
