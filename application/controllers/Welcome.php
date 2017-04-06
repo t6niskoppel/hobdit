@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
             $this->load->view('sidebar');
             $this->load->view('footer');
         } else {
-            redirect('welcome/index');
+            redirect('index.php/welcome/index');
         }
     }
 
@@ -49,7 +49,7 @@ class Welcome extends CI_Controller {
                 if ($checkLogin) {
                     $this->session->set_userdata('isUserLoggedIn', TRUE);
                     $this->session->set_userdata('userId', $checkLogin['ID']);
-                    redirect('welcome/index/');
+                    redirect('index.php/welcome/index/');
                 } else {
                     $data['error_msg'] = 'Wrong email or password, please try again.';
                 }
@@ -82,7 +82,7 @@ class Welcome extends CI_Controller {
                 $insert = $this->user->insert($userData);
                 if ($insert) {
                     $this->session->set_userdata('success_msg', 'Registration successful. Please login to your account.');
-                    redirect('welcome/login');
+                    redirect('index.php/welcome/login');
                 } else {
                     $data['error_msg'] = 'Registration unsuccessful, please try again.';
                 }
@@ -100,7 +100,7 @@ class Welcome extends CI_Controller {
         $this->session->unset_userdata('isUserLoggedIn');
         $this->session->unset_userdata('userId');
         $this->session->sess_destroy();
-        redirect('welcome/index/');
+        redirect('index.php/welcome/index/');
     }
 
     //------------vaatab, kas antud emailiga kasutaja on olemas---------------
