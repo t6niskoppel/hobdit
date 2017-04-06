@@ -84,15 +84,6 @@
       <div class="form-group text-left">
          <label for="comment">Kommenteeri:</label>
          <textarea class="form-control" rows="5" id="comment"></textarea>
-         <button type="Submit">Postita</button>
+         <button type="Submit" class="btn btn-primary btn-block">Postita</button>
       </div>
    </div>
-   <div class="col-sm-2 well">
-      <p>Kategooriad</p>
-      <div class="list-group">
-         <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 1</a>
-         <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 2</a>
-         <a href="<?php echo base_url(); ?>index.php/welcome/category" class="list-group-item">Kategooria 3</a>
-      </div>
-   </div>
-</div>
