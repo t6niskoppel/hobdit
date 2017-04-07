@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kalender.css"/>     
         <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kalender.js"></script>
-        <!--- Google maps---->
+        <!-- Google maps -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kaart.css"/>
         <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kaart.js"></script>
         <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/registreerimine.js"></script>
@@ -36,9 +36,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="<?php echo base_url(); ?>index.php/welcome/search"><?php echo lang("header_refined_search"); ?></a></li>
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
-                    <label for="search" class="sr-only">Search</label>
+                    <label for="search" class="sr-only"><?php echo lang("header_search"); ?></label>
                     <div class="form-group input-group">
-                        <input type="text" class="form-control" placeholder="Search.." id="search">
+                        <input type="text" class="form-control" placeholder="<?php echo lang("header_search"); ?>" id="search">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -51,17 +51,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     if ($this->session->userdata('isUserLoggedIn')) {
                         echo'<li><a href="';
                         echo base_url();
-                        echo 'index.php/welcome/account"><span class="glyphicon glyphicon-user"></span>My account</a></li>
-                        <li><a href="';
+                        echo 'index.php/welcome/account"><span class="glyphicon glyphicon-user"></span> ';
+						echo lang("header_my_account");
+						echo '</a></li>';
+						echo '<li><a href="';
                         echo base_url();
-                        echo 'index.php/welcome/logout"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>';
+                        echo 'index.php/welcome/logout"><span class="glyphicon glyphicon-log-out"></span> ';
+						echo lang("header_log_out");
+						echo '</a></li>';
                     } else {
                         echo'<li><a href="';
                         echo base_url();
-                        echo 'index.php/welcome/registration"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>';
+                        echo 'index.php/welcome/registration"><span class="glyphicon glyphicon-list-alt"></span> ';
+						echo lang("header_register");
+						echo '</a></li>';
                         echo'<li><a href="';
                         echo base_url();
-                        echo 'index.php/welcome/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+                        echo 'index.php/welcome/login"><span class="glyphicon glyphicon-log-in"></span> ';
+						echo lang("header_log_in");
+						echo '</a></li>';
                     }
                     ?>
 

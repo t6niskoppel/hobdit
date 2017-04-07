@@ -17,7 +17,7 @@
                      </div>
                   </div>
                   <div class="media-body">
-                     <h4 class="media-heading">Postituse pealkiri</h4>
+                     <h4 class="media-heading"><?php echo lang("posting_main_title"); ?>:</h4>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                </div>
@@ -82,8 +82,8 @@
          </div>
       </div>
       <div class="form-group text-left">
-         <label for="comment">Kommenteeri:</label>
+         <label for="comment"><?php echo lang("posting_comment"); ?>:</label>
          <textarea class="form-control" rows="5" id="comment"></textarea>
-         <button type="Submit" class="btn btn-primary btn-block">Postita</button>
+         <button type="submit" class="btn btn-primary"><?php echo lang("button_submit"); ?></button>
       </div>
    </div>

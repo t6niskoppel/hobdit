@@ -10,27 +10,27 @@
             </div>
          </div>
       </div>
-      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#newPost">Uus postitus</button>
+      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#newPost"><?php echo lang("category_new_post"); ?></button>
       <div class="modal fade" id="newPost" role="dialog">
          <div class="modal-dialog modal-lg">
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Uus postitus</h4>
+                  <h4 class="modal-title"><?php echo lang("category_new_post"); ?></h4>
                </div>
                <div class="modal-body">
                   <div class="form-group">
-                     <label class="col-md-2 control-label text-left" for="title">Pealkiri:</label>
+                     <label class="col-md-2 control-label text-left" for="title"><?php echo lang("category_new_post_title"); ?>:</label>
                      <input type="text" class="form-control" id="title">
                   </div>
                   <div class="form-group">
-                     <label class="col-md-2 control-label text-left" for="comment">Sisu:</label>
+                     <label class="col-md-2 control-label text-left" for="comment"><?php echo lang("category_new_post_text"); ?>:</label>
                      <textarea class="form-control" rows="5" id="comment"></textarea>
                   </div>
                </div>
                <div class="modal-footer">
-			      <button type="submit" class="btn btn-default">Submit</button>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      <button type="submit" class="btn btn-primary"><?php echo lang("button_submit"); ?></button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo lang("button_close"); ?></button>
                </div>
             </div>
          </div>

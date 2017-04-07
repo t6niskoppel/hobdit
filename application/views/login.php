@@ -14,12 +14,12 @@
             <?php echo form_error('email','<span class="help-block">','</span>'); ?>
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" name="parool" placeholder="Parool" required="">
+          <input type="password" class="form-control" name="parool" placeholder="<?php echo lang("log_in_password"); ?>" required="">
           <?php echo form_error('parool','<span class="help-block">','</span>'); ?>
         </div>
         <div class="form-group">
-            <input type="submit" name="loginSubmit" class="btn btn-primary btn-block" value="Submit"/>
+            <input type="submit" class="btn btn-primary" name="loginSubmit" value="<?php echo lang("button_submit"); ?>">
         </div>
     </form>
-    <p class="footInfo">Pole kasutajat? <a href="<?php echo base_url(); ?>index.php/welcome/registration">Registreeri</a></p>
+    <p class="footInfo"><?php echo lang("log_in_no_user"); ?> <a href="<?php echo base_url(); ?>index.php/welcome/registration"><?php echo lang("log_in_register"); ?></a></p>
 </div>

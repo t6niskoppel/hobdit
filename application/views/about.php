@@ -4,9 +4,13 @@
 <div class="container text-left">
    <div class="col-sm-12">
       <div class="form-group">
+		  <h2><?php echo lang("about_title"); ?></h2>
+		  <h3><?php echo lang("about_our_location"); ?></h3>
           <div id="map"></div>
-         <h3>Lehekülje informatsioon</h3>
-         <p>Palju huvitavat teksti</p>
+      </div>
+	  <div class="form-group">
+		  <h3><?php echo lang("about_text_title"); ?></h3>
+		  <?php echo lang("about_text"); ?>
       </div>
    </div>
 </div>

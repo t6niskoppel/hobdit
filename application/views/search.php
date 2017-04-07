@@ -1,16 +1,16 @@
 <div class="container text-left">
    <div class="col-sm-12">
-      <h2>Täpsem otsing</h2>
+      <h2><?php echo lang("search_title"); ?></h2>
       <div class="form-group">
-         <label for="pealkiri">Postituse pealkiri:</label>
+         <label for="pealkiri"><?php echo lang("search_post_title"); ?>:</label>
          <input type="text" class="form-control" id="pealkiri">
       </div>
       <div class="form-group">
-         <label for="sisu">Sisaldab teksti:</label>
+         <label for="sisu"><?php echo lang("search_words"); ?>:</label>
          <input type="text" class="form-control" id="sisu">
       </div>
       <div class="form-group">
-         <label for="kategooriad">Kategooria:</label>
+         <label for="kategooriad"><?php echo lang("search_category"); ?>:</label>
 		 <br>
          <select class="selectpicker" id="kategooriad">
             <option>Esimene kategooria</option>
@@ -20,17 +20,17 @@
       </div>
       <div class="form-group">
          <div class="form-group ">
-            <label for="startDate">Alguskuupäev:</label>
+            <label for="startDate"><?php echo lang("search_start_date"); ?>:</label>
 			<br>
             <input id="startDate" name="date" placeholder="MM/DD/YYYY" type="text"/>
          </div>
       </div>
       <div class="form-group">
-            <label for="endDate">Lõppkuupäev:</label>
+            <label for="endDate"><?php echo lang("search_end_date"); ?>:</label>
 			<br>
             <input id="endDate" name="date" placeholder="MM/DD/YYYY" type="text"/>
       </div>
       <br>
-      <button type="submit" value="Submit" class="btn btn-primary btn-md">Otsi</button>
+      <button type="submit" value="Submit" class="btn btn-primary btn-md"><?php echo lang("button_search"); ?></button>
    </div>
 </div>
