@@ -8,13 +8,15 @@
     }elseif(!empty($error_msg)){
         echo '<p class="statusMsg">'.$error_msg.'</p>';}
     ?>
-    <form action="" method="post">
+    <form method="post">
         <div class="form-group has-feedback">
-            <input type="email" class="form-control" name="email" placeholder="Email" required="" value="">
+			<label class="col-md-2 control-label text-left" for="log_in_email">Email:</label>
+            <input type="email" id="log_in_email" class="form-control" name="email" placeholder="Email" required="" value="">
             <?php echo form_error('email','<span class="help-block">','</span>'); ?>
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" name="parool" placeholder="<?php echo lang("log_in_password"); ?>" required="">
+		  <label class="col-md-2 control-label text-left" for="log_in_password"><?php echo lang("log_in_password"); ?>:</label>
+          <input type="password" id="log_in_password" class="form-control" name="parool" placeholder="<?php echo lang("log_in_password"); ?>" required="">
           <?php echo form_error('parool','<span class="help-block">','</span>'); ?>
         </div>
         <div class="form-group">

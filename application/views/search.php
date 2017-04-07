@@ -33,4 +33,3 @@
       <br>
       <button type="submit" value="Submit" class="btn btn-primary btn-md"><?php echo lang("button_search"); ?></button>
    </div>
-</div>
