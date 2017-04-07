@@ -21,5 +21,5 @@
             <input type="submit" name="loginSubmit" class="btn btn-primary btn-block" value="Submit"/>
         </div>
     </form>
-    <p class="footInfo">Pole kasutajat? <a href="<?php echo base_url(); ?>welcome/registration">Registreeri</a></p>
+    <p class="footInfo">Pole kasutajat? <a href="<?php echo base_url(); ?>index.php/welcome/registration">Registreeri</a></p>
 </div>

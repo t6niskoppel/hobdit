@@ -26,12 +26,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk">Help</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/welcome/about">About</a></li>
+                    <li><a href="<?php echo base_url(); ?>"><?php echo lang("header_home"); ?></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk"><?php echo lang("header_help"); ?></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/welcome/about"><?php echo lang("header_about"); ?></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url(); ?>index.php/welcome/search">Refined search</a></li>
+					<li><a href="<?php echo base_url(); ?>index.php/langswitch/switchLanguage/estonian">Eesti</a></li>
+					<li><a href="<?php echo base_url(); ?>index.php/langswitch/switchLanguage/english">English</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/welcome/search"><?php echo lang("header_refined_search"); ?></a></li>
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
                     <label for="search" class="sr-only">Search</label>

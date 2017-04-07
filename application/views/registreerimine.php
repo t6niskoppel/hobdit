@@ -23,5 +23,5 @@
             <input type="submit" name="regSubmit" class="btn btn-primary btn-block" value="Submit"/>
         </div>
     </form>
-    <p class="footInfo">Already have an account? <a href="<?php echo base_url(); ?>welcome/login">Login here</a></p>              
+    <p class="footInfo">Already have an account? <a href="<?php echo base_url(); ?>index.php/welcome/login">Login here</a></p>              
 </div>
