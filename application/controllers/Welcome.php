@@ -8,6 +8,7 @@ class Welcome extends CI_Controller {
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model('user');
+        $this->load->model('postitus');
     }
 
     public function account() {
@@ -125,9 +126,32 @@ class Welcome extends CI_Controller {
     }
 
     public function category() {
+        $data = array();
+        $userData = array();
         $data['title'] = 'Kategooriad';
+        
+        if ($this->input->post('new_postSubmit')) {
+            $this->form_validation->set_rules('title', 'Title', 'required');
+            $this->form_validation->set_rules('text', 'Text', 'required');
+
+            $userData = array(
+                'title' => strip_tags($this->input->post('title')),
+                'text' => strip_tags($this->input->post('text')),
+                'kategooria_id' => 1,
+                'userId' => $this->session->userdata['userId']
+            );
+
+            if ($this->form_validation->run()) {
+                $insert = $this->postitus->addPost($userData);
+                if ($insert) {
+                    $data['success_msg'] = 'Post created';
+                } else {
+                    $data['error_msg'] = 'Something happened. Didn\'t create post ';
+                }
+            }
+        }
         $this->load->view('header', $data);
-        $this->load->view('category_view');
+        $this->load->view('category_view', $data);
         $this->load->view('sidebar');
         $this->load->view('footer');
     }
