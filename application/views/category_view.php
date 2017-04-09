@@ -32,13 +32,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="modal-body">
                             <form method="post">
                                 <div class="form-group">
-                                    <label class="col-md-2 control-label text-left" for="title">Title</label>
-                                    <input type="text" id="title" class="form-control" name="title" placeholder="Pealkiri" required="">
+                                    <label class="col-md-2 control-label text-left" for="title"><?php echo lang("category_new_post_title"); ?></label>
+                                    <input type="text" id="title" class="form-control" name="title" placeholder="<?php echo lang("category_new_post_title"); ?>" required="">
 
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-2 control-label text-left" for="text">Post:</label>
-                                    <textarea type="text" id="text" class="form-control" rows="6" name="text" placeholder="Postitus" required="" ></textarea>
+                                    <label class="col-md-2 control-label text-left" for="text"><?php echo lang("category_new_post_text"); ?></label>
+                                    <textarea id="text" class="form-control" rows="6" name="text" placeholder="<?php echo lang("category_new_post_text"); ?>" required="" ></textarea>
 
                                 </div>                                
                                 <div class="form-group">

@@ -7,7 +7,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>media/css/bootstrap.css">
+		
+		<!-- Kasutab CDN-i, kui pole saadaval, siis võtab kohalikust failist -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>media/js/jquery.min.js"><\/script>')</script>
+		
         <script src="<?php echo base_url(); ?>media/js/bootstrap.js"></script>
         <!-- Date Picker -->
         <script async type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>

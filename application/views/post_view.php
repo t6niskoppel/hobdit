@@ -81,9 +81,12 @@
             </div>
          </div>
       </div>
-      <div class="form-group text-left">
-         <label for="comment"><?php echo lang("posting_comment"); ?>:</label>
-         <textarea class="form-control" rows="5" id="comment"></textarea>
-         <button type="submit" class="btn btn-primary"><?php echo lang("button_submit"); ?></button>
-      </div>
+	          <?php
+        if ($this->session->userdata('isUserLoggedIn')) {
+		 echo '<div class="form-group text-left">';
+         echo '<label for="comment">'; echo lang("posting_comment");echo':</label>';
+         echo '<textarea class="form-control" rows="5" id="comment"></textarea>';
+         echo '<button type="submit" class="btn btn-primary">';echo lang("button_submit"); echo'</button></div>';        
+        }?>
+	
    </div>

@@ -52,7 +52,7 @@ class Welcome extends CI_Controller {
                     $this->session->set_userdata('userId', $checkLogin['ID']);
                     redirect('index.php/welcome/index/');
                 } else {
-                    $data['error_msg'] = 'Wrong email or password, please try again.';
+                    $data['error_msg'] = lang("error_wrong_email_or_password");
                 }
             }
         }
@@ -82,10 +82,10 @@ class Welcome extends CI_Controller {
             if ($this->form_validation->run()) {
                 $insert = $this->user->insert($userData);
                 if ($insert) {
-                    $this->session->set_userdata('success_msg', 'Registration successful. Please login to your account.');
+                    $this->session->set_userdata('success_msg', lang("error_registration_successful"));
                     redirect('index.php/welcome/login');
                 } else {
-                    $data['error_msg'] = 'Registration unsuccessful, please try again.';
+                    $data['error_msg'] = lang("error_registration_not_successful");
                 }
             }
         }
@@ -110,7 +110,7 @@ class Welcome extends CI_Controller {
         $mail['conditions'] = array('email' => $str);
         $checkEmail = $this->user->checkRows($mail);
         if ($checkEmail > 0) {
-            $this->form_validation->set_message('email_check', 'User with given email already exists.');
+            $this->form_validation->set_message('email_check', lang("error_email_in_use"));
             return FALSE;
         } else {
             return TRUE;
@@ -144,9 +144,9 @@ class Welcome extends CI_Controller {
             if ($this->form_validation->run()) {
                 $insert = $this->postitus->addPost($userData);
                 if ($insert) {
-                    $data['success_msg'] = 'Post created';
+                    $data['success_msg'] = lang("error_post_creation_successful");
                 } else {
-                    $data['error_msg'] = 'Something happened. Didn\'t create post ';
+                    $data['error_msg'] = lang("error_post_creation_not_successful");
                 }
             }
         }

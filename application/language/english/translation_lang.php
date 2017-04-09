@@ -64,3 +64,11 @@ $lang["search_words"] = "Words in the post";
 $lang["search_category"] = "Category";
 $lang["search_start_date"] = "Start searching from date";
 $lang["search_end_date"] = "End date";
+
+// teated ja vead
+$lang["error_wrong_email_or_password"] = "Wrong email or password, please try again.";
+$lang["error_registration_successful"] = "Registration successful. Please login to your account.";
+$lang["error_registration_not_successful"] = "Registration unsuccessful, please try again.";
+$lang["error_email_in_use"] = "User with given email already exists.";
+$lang["error_post_creation_successful"] = "Post created";
+$lang["error_post_creation_not_successful"] = "Something happened. Didn\'t create post.";

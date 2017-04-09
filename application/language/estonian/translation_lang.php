@@ -64,3 +64,11 @@ $lang["search_words"] = "Postituses sisalduvad sõnad";
 $lang["search_category"] = "Kategooria";
 $lang["search_start_date"] = "Otsingu lõppkuupäev";
 $lang["search_end_date"] = "Otsingu alguskuupäev";
+
+// messages and errors
+$lang["error_wrong_email_or_password"] = "Vale email või parool, proovi uuesti.";
+$lang["error_registration_successful"] = "Registreerumine edukas. Palun logige sisse.";
+$lang["error_registration_not_successful"] = "Probleem registreerimisel, palun proovige uuesti.";
+$lang["error_email_in_use"] = "Email on juba kasutuses!";
+$lang["error_post_creation_successful"] = "Postitatud!";
+$lang["error_post_creation_not_successful"] = "Midagi läks valest. Postitust ei toimunud.";
