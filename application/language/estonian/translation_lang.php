@@ -41,7 +41,9 @@ $lang["about_text"] = "Veebileht on tehtud kolme tubli Tartu Ülikooli tudengi p
 // korduma kippuvad küsimused (Abi)
 $lang["help_title"] = "Korduma Kippuvad Küsimused";
 $lang["help_q1"] = "Kuidas lisada postitusi?";
-$lang["help_q1_a"] = "Kerige kommentaarikasti juurde ning sisestage oma mõtted. Seejärel vajutage nuppu Postita";
+$lang["help_q1_a"] = "Liikuge kommentaarikasti juurde ning sisestage oma mõtted. Seejärel vajutage nuppu Postita.";
+$lang["help_q2"] = "Kuidas oma kasutajanime muuta?";
+$lang["help_q2_a"] = "Saatke meile kiri kasutades selle lõpus olevat vormi.";
 $lang["help_more_help"] = "Kas ei leidnud siit vastust? Küsige julgelt!";
 $lang["help_more_help_comment_placeholder"] = "Kirjutage siia...";
 

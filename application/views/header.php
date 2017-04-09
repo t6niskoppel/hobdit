@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>media/css/bootstrap.css">
 		
-		<!-- Kasutab CDN-i, kui pole saadaval, siis võtab kohalikust failist -->
+		<!-- Kui CDN pole pole saadaval, siis võtab kohalikust failist -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>media/js/jquery.min.js"><\/script>')</script>
 		
@@ -29,6 +29,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo base_url(); ?>"><?php echo lang("header_home"); ?></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/welcome/kkk"><?php echo lang("header_help"); ?></a></li>
@@ -79,4 +88,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 </ul>
             </div>
+</div>
         </nav>

@@ -7,10 +7,8 @@
 		 <h2><?php echo lang("about_title"); ?></h2>
          <h3><?php echo lang("help_q1"); ?></h3>
 		 <p><?php echo lang("help_q1_a"); ?></p>
-		 <h3><?php echo lang("help_q1"); ?></h3>
-		 <p><?php echo lang("help_q1_a"); ?></p>
-		 <h3><?php echo lang("help_q1"); ?></h3>
-		 <p><?php echo lang("help_q1_a"); ?></p>
+		 <h3><?php echo lang("help_q2"); ?></h3>
+		 <p><?php echo lang("help_q2_a"); ?></p>
 	  </div>
       <div class="form-group">
          <label for="comment"><?php echo lang("help_more_help"); ?></label>

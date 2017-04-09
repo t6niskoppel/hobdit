@@ -41,7 +41,9 @@ $lang["about_text"] = "The page is made by three awesome students of University 
 // help
 $lang["help_title"] = "Frequently Asked Questions";
 $lang["help_q1"] = "How to add a comment?";
-$lang["help_q1_a"] = "Scroll down to the comment box and write something in it. Then click on Submit.";
+$lang["help_q1_a"] = "On the posting page scroll down to the comment box and write something in it. Then click on Submit.";
+$lang["help_q2"] = "How to change my username?";
+$lang["help_q2_a"] = "Send us a letter by using the comment box at the end of this page.";
 $lang["help_more_help"] = "Didn't find an answer? Don't be afraid to ask!";
 $lang["help_more_help_comment_placeholder"] = "Write here...";
 
