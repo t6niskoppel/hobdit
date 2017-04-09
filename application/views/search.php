@@ -1,5 +1,5 @@
 <div class="container text-left">
-   <div class="col-sm-12">
+   <div class="col-sm-10">
       <h2><?php echo lang("search_title"); ?></h2>
       <div class="form-group">
          <label for="pealkiri"><?php echo lang("search_post_title"); ?>:</label>
