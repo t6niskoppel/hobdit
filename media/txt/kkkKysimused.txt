@@ -1,0 +1,4 @@
+<h3>Kas ma saad saidi teha X keelseks?</h3>
+<p>Praegu on meil ainult eesti ning inglisekeelne tugi, kuid saatke meile kiri ja arutame asja.</p>
+<h3>Kuidas ma leian üles postituse, mida ma eile nägin?</h3>
+<p>Kasutage otsingu tööriista, kui see ei aita kasutage täpsema otsingu tööriista.</p>

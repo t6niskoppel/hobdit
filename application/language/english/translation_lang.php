@@ -41,11 +41,22 @@ $lang["about_text"] = "The page is made by three awesome students of University 
 // help
 $lang["help_title"] = "Frequently Asked Questions";
 $lang["help_q1"] = "How to add a comment?";
-$lang["help_q1_a"] = "On the posting page scroll down to the comment box and write something in it. Then click on Submit.";
-$lang["help_q2"] = "How to change my username?";
-$lang["help_q2_a"] = "Send us a letter by using the comment box at the end of this page.";
+$lang["help_q1_a"] = "On the posting page scroll down to the comment box and write something in it. Then click on Submit. You have to be logged in.";
+$lang["help_q2"] = "How to add new posts?";
+$lang["help_q2_a"] = "Choose a category and click on New post. You have to be logged in.";
+$lang["help_q3"] = "How to change my password?";
+$lang["help_q3_a"] = "We are still working on that funtionality.";
+$lang["help_q4"] = "How to change my email?";
+$lang["help_q4_a"] = "Sadly there is no way to change it.";
+$lang["help_q5"] = "How to change my username?";
+$lang["help_q5_a"] = "Send us a letter by using the comment box at the end of this page.";
+$lang["help_q6"] = "Can I change the site to language X?";
+$lang["help_q6_a"] = "Currently we support Estonian and English, but contact us and let's have a talk about it.";
+$lang["help_q7"] = "How can I find the cool post I saw yesterday?";
+$lang["help_q7_a"] = "Use our search tool, if that does not give you the answer try our refined search tool.";
 $lang["help_more_help"] = "Didn't find an answer? Don't be afraid to ask!";
 $lang["help_more_help_comment_placeholder"] = "Write here...";
+$lang["help_ajax_button"] = "More questions...";
 
 // kategooriad
 $lang["category_new_post"] = "New post";

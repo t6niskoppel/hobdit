@@ -42,10 +42,21 @@ $lang["about_text"] = "Veebileht on tehtud kolme tubli Tartu Ülikooli tudengi p
 $lang["help_title"] = "Korduma Kippuvad Küsimused";
 $lang["help_q1"] = "Kuidas lisada postitusi?";
 $lang["help_q1_a"] = "Liikuge kommentaarikasti juurde ning sisestage oma mõtted. Seejärel vajutage nuppu Postita.";
-$lang["help_q2"] = "Kuidas oma kasutajanime muuta?";
-$lang["help_q2_a"] = "Saatke meile kiri kasutades selle lõpus olevat vormi.";
+$lang["help_q2"] = "Kuidas postitada uusi teemasid?";
+$lang["help_q2_a"] = "Valige kategooria ning vajuta Uus postitus. Selle kasutamiseks peate sisse logitud olema.";
+$lang["help_q3"] = "Kuidas muuta oma parooli?";
+$lang["help_q3_a"] = "Hetkel ei saa seda muuta, võib olla kunagi tulevikus.";
+$lang["help_q4"] = "Kuidas muuta oma emaili?";
+$lang["help_q4_a"] = "Kahjuks ei saa seda muuta.";
+$lang["help_q5"] = "Kuidas muuta oma kasutajanime?";
+$lang["help_q5_a"] = "Saatke meile kiri kasutades all olevat kommentaarikasti.";
+$lang["help_q6"] = "Kas ma saad saidi teha X keelseks?";
+$lang["help_q6_a"] = "Praegu meil on ainult eesti ning inglisekeelne tugi, kuid saatke meile kiri ja arutame asja.";
+$lang["help_q7"] = "Kuidas ma leian üles postituse, mida ma eile nägin?";
+$lang["help_q7_a"] = "Kasutage otsingu tööriista, kui see ei aita kasutage täpsema otsingu tööriista.";
 $lang["help_more_help"] = "Kas ei leidnud siit vastust? Küsige julgelt!";
 $lang["help_more_help_comment_placeholder"] = "Kirjutage siia...";
+$lang["help_ajax_button"] = "Veel küsimusi...";
 
 // kategooriad
 $lang["category_new_post"] = "Uus postitus";

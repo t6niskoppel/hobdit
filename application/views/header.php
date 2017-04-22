@@ -19,9 +19,12 @@
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kalender.js"></script>
       <!-- Google maps -->
       <link rel="stylesheet" href="<?php echo base_url(); ?>media/css/kaart.css"/>
-	  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNSxth2gmgcDQB6XwixoXtFYmkR6NrcTc&callback=initMap"></script>
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/kaart.js"></script>
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNSxth2gmgcDQB6XwixoXtFYmkR6NrcTc&callback=initMap"></script>
+	  <!-- Registreerimine -->
       <script async type="text/javascript" src="<?php echo base_url(); ?>media/js/registreerimine.js"></script>
+	  <!-- KKK lisaküsimused AJAXiga -->
+	  <script type="text/javascript" src="<?php echo base_url(); ?>media/js/kkkkysimused.js"></script>
    </head>
    <body>
       <nav class="navbar navbar-inverse">
