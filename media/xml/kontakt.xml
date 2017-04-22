@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<meeskond>
+	<liige>
+    <nimi>Tõnis Koppel</nimi>
+    <telefon>500 9001</telefon>
+	<email>TKoppel@hobdit.ee</email>
+    </liige>
+
+	<liige>
+    <nimi>Jaanus Kustassoo</nimi>
+    <telefon>500 9002</telefon>
+	<email>JKustassoo@hobdit.ee</email>
+    </liige>
+
+	<liige>
+    <nimi>Robert Sepp</nimi>
+    <telefon>500 9003</telefon>
+	<email>RSepp@hobdit.ee</email>
+    </liige>
+</meeskond>
