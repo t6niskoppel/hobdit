@@ -9,13 +9,14 @@ class Welcome extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->model('user');
         $this->load->model('postitus');
+        $this->load->model('kategooria');
     }
 
     public function account() {
         $data = array();
         if ($this->session->userdata('isUserLoggedIn')) {
             $data['user'] = $this->user->checkRows(array('id' => $this->session->userdata('userId')));
-            
+
             $this->load->view('header');
             $this->load->view('account', $data);
             $this->load->view('sidebar');
@@ -118,10 +119,11 @@ class Welcome extends CI_Controller {
     }
 
     public function index() {
+        $data['categories'] = $this->kategooria->getCategories();
         $data['title'] = 'Avaleht';
         $this->load->view('header', $data);
         $this->load->view('avaleht');
-        $this->load->view('sidebar');
+        $this->load->view('sidebar', $data);
         $this->load->view('footer');
     }
 
@@ -129,7 +131,7 @@ class Welcome extends CI_Controller {
         $data = array();
         $userData = array();
         $data['title'] = 'Kategooriad';
-        
+
         if ($this->input->post('new_postSubmit')) {
             $this->form_validation->set_rules('title', 'Title', 'required');
             $this->form_validation->set_rules('text', 'Text', 'required');
@@ -150,33 +152,37 @@ class Welcome extends CI_Controller {
                 }
             }
         }
+        $data['categories'] = $this->kategooria->getCategories();
         $this->load->view('header', $data);
         $this->load->view('category_view', $data);
-        $this->load->view('sidebar');
+        $this->load->view('sidebar', $data);
         $this->load->view('footer');
     }
 
     public function post_view() {
+        $data['categories'] = $this->kategooria->getCategories();
         $data['title'] = 'Postitus';
         $this->load->view('header', $data);
         $this->load->view('post_view');
-        $this->load->view('sidebar');
+        $this->load->view('sidebar', $data);
         $this->load->view('footer');
     }
 
     public function new_post() {
+        $data['categories'] = $this->kategooria->getCategories();
         $data['title'] = 'Uus postitus';
         $this->load->view('header', $data);
         $this->load->view('new_post_view');
-        $this->load->view('sidebar');
+        $this->load->view('sidebar', $data);
         $this->load->view('footer');
     }
 
-    public function kkk() {
+    public function kkk() {$data['title'] = 'Täpsem otsing';
+        $data['categories'] = $this->kategooria->getCategories();
         $data['title'] = 'KKK';
         $this->load->view('header', $data);
         $this->load->view('kkk');
-        $this->load->view('sidebar');
+        $this->load->view('sidebar', $data);
         $this->load->view('footer');
     }
 
@@ -189,8 +195,9 @@ class Welcome extends CI_Controller {
 
     public function search() {
         $data['title'] = 'Täpsem otsing';
+        $data['categories'] = $this->kategooria->getCategories();
         $this->load->view('header', $data);
-        $this->load->view('search');
+        $this->load->view('search', $data);
         $this->load->view('sidebar');
         $this->load->view('footer');
     }

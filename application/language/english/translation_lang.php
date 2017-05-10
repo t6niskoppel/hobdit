@@ -10,7 +10,7 @@ $lang["button_search"] = "Search";
 $lang["header_home"] = "Home";
 $lang["header_help"] = "Help";
 $lang["header_about"] = "About";
-$lang["header_register"] = "Sign up"; 
+$lang["header_register"] = "Sign up";
 $lang["header_log_in"] = "Log in";
 $lang["header_my_account"] = "My account";
 $lang["header_log_out"] = "Log out";
@@ -77,6 +77,7 @@ $lang["search_words"] = "Words in the post";
 $lang["search_category"] = "Category";
 $lang["search_start_date"] = "Start searching from date";
 $lang["search_end_date"] = "End date";
+$lang["search_all_categories"] = "All categories";
 
 // teated ja vead
 $lang["error_wrong_email_or_password"] = "Wrong email or password, please try again.";

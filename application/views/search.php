@@ -13,10 +13,14 @@
          <label for="kategooriad"><?php echo lang("search_category"); ?>:</label>
 		 <br>
          <select class="selectpicker" id="kategooriad">
-            <option>Esimene kategooria</option>
-            <option>Teine kategooria</option>
-            <option>Kolmas kategooria</option>
-         </select>
+            <option><?php echo lang("search_all_categories"); ?> </option>
+            <?php
+            echo "tere";
+              foreach ($categories as $value) {
+                echo '<option>' . $value['Kategooria'] . '</option>';
+              }
+             ?>
+          </select>
       </div>
       <div class="form-group">
          <div class="form-group ">

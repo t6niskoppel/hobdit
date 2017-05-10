@@ -77,6 +77,7 @@ $lang["search_words"] = "Postituses sisalduvad sõnad";
 $lang["search_category"] = "Kategooria";
 $lang["search_start_date"] = "Otsingu lõppkuupäev";
 $lang["search_end_date"] = "Otsingu alguskuupäev";
+$lang["search_all_categories"] = "Kõik kategooriad";
 
 // messages and errors
 $lang["error_wrong_email_or_password"] = "Vale email või parool, proovi uuesti.";
