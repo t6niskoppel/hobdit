@@ -85,4 +85,4 @@ $lang["error_registration_successful"] = "Registration successful. Please login 
 $lang["error_registration_not_successful"] = "Registration unsuccessful, please try again.";
 $lang["error_email_in_use"] = "User with given email already exists.";
 $lang["error_post_creation_successful"] = "Post created";
-$lang["error_post_creation_not_successful"] = "Something happened. Didn\'t create post.";
+$lang["error_post_creation_not_successful"] = "Something went wrong. The post was not created.";

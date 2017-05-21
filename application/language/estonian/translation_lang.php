@@ -85,4 +85,4 @@ $lang["error_registration_successful"] = "Registreerumine edukas. Palun logige s
 $lang["error_registration_not_successful"] = "Probleem registreerimisel, palun proovige uuesti.";
 $lang["error_email_in_use"] = "Email on juba kasutuses!";
 $lang["error_post_creation_successful"] = "Postitatud!";
-$lang["error_post_creation_not_successful"] = "Midagi läks valest. Postitust ei toimunud.";
+$lang["error_post_creation_not_successful"] = "Midagi läks valesti. Postitust ei toimunud.";

@@ -19,7 +19,8 @@ class Welcome extends CI_Controller {
 
             $this->load->view('header');
             $this->load->view('account', $data);
-            $this->load->view('sidebar');
+			$data['categories'] = $this->kategooria->getCategories();
+            $this->load->view('sidebar', $data);
             $this->load->view('footer');
         } else {
             redirect('index.php/welcome/index');

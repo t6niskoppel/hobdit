@@ -15,7 +15,6 @@
          <select class="selectpicker" id="kategooriad">
             <option><?php echo lang("search_all_categories"); ?> </option>
             <?php
-            echo "tere";
               foreach ($categories as $value) {
                 echo '<option>' . $value['Kategooria'] . '</option>';
               }
